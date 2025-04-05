@@ -1,0 +1,196 @@
+/* 1. RESET & GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    line-height: 1.5;
+  }
+  
+  /* 2. HEADER & NAVBAR */
+  .site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 550px;
+  }
+  
+  .logo-img {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #007acc;
+  }
+  
+  /* 3. HERO SECTION */
+  .hero {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 3rem 1rem;
+    width: 100lvw;
+    height: 100lvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin: 1rem 0;
+  }
+  
+  .cta-button:hover {
+    background-color: #005f99;
+  }
+  
+  .hero-description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* 4. INFO SECTION */
+  .info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  
+  .info-card {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-icon {
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .info-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* 5. FOOTER */
+  .site-footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .footer-nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .footer-nav a:hover {
+    color: #007acc;
+  }
+
+  .Line{
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .Line ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: scroll 20s linear infinite;
+  }
+
+  @keyframes scroll {
+    to {
+        transform: translateX(-100%);
+    }
+  }
+
+  .Line:hover ul {
+    animation-play-state: paused;
+  }
+  
